@@ -1,6 +1,6 @@
 using System;
 
-namespace CryptographicProtocols
+namespace MagmaApp
 {
     /// <summary>
     /// GOST 28147-89 (Magma) cipher implementation
@@ -28,6 +28,8 @@ namespace CryptographicProtocols
         /// <returns>Processed byte array</returns>
         public static byte[] ProcessData(byte[] data, string key, bool decrypt = false)
         {
+            if (data == null || data.Length == 0)
+                throw new ArgumentException("Data cannot be empty", nameof(data));
             // Add PKCS7 padding before processing
             byte[] paddedData = AddPadding(data);
             uint[] keyParts = KeyToUInts(key);
