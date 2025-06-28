@@ -3,17 +3,22 @@
 C# implementations of cryptographic algorithms from university course.
 
 ## 📌 Implemented Algorithms
-| Algorithm               | Type          | Status       |
-|-------------------------|---------------|--------------|
-| GOST 28147-89 (Magma)   | Block cipher  | ✅ Completed |
-| RSA                     | Asymmetric    | 🚧 In progress |
-| GOST 34.11-2012         | Hash          | Planned      |
+| Algorithm                      | Type               | Status         |
+|--------------------------------|--------------------|----------------|
+| **GOST 28147-89 (Magma)**      | Symmetric (Block cipher) | ✅ Completed  |
+| **RSA**                        | Asymmetric         | ✅ Completed  |
+| **GOST 34.11-2012**            | Hash function      | 🚧 In progress |
+| **Kerberos protocol**          | Authentication     | Planned       |
+| **Fiat-Shamir protocol**       | Zero-knowledge proof | Planned       |
+| **Shamir's Secret Sharing**    | Threshold scheme   | Planned       |
+| **Chaum's Blind Signature**    | Digital signature  | Planned       |
+| **Ong-Schnorr-Shamir**         | Covert channel     | Planned       |
 
 ## 🛠 Project Structure
 ```
 src/
 ├── MagmaApp/          # Magma cipher implementation
-├── RSAApp/            # RSA encryption (WIP)
+├── RsaApp/            # RSA encryption 
 └── ...
 ```
 
